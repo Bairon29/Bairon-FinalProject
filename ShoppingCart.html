@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping Cart</title>
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="logoheader.css">
+	<link rel="stylesheet" type="text/css" href="Saleslayout.css">
+	<link rel="stylesheet" type="text/css" href="Generalgamelayout.css">
+
+<script type="text/javascript" src="ShoppingCart.js"></script>
+</head>
+<body onload="LoadCart()">
+
+<div class="logoDiv">
+<a href="FinalProject.html"><img class="imglogo" src="logoweb2.png"></a> 
+<input class="INPUTSEARCH1" type="search" placeholder="Search" name="toolbar"> 
+<button class="SEARCHB">SEARCH</button> 
+<hr class="Separator1"> 
+<a class="LOGIN" href="SIGNIN.html">Login</a><hr class="Separator2">
+<a class="SIGN" href="SIGNUP.html">Sign Up</a>
+<a class="CART" href="ShoppingCart.html"><img src="shoppingcart.png"></a>
+<div id="cir"><p id="number">0</p></div>
+</div>
+
+	<div class="menu">
+	<nav class="submenu">
+		 		<a href="FinalProject.html"  class="home"><b>HOME</b></a>
+				<a href="PS4.html" class="home"><b >PS4 GAMES</b></a>
+				<a href="XBOX.html" class="home"><b >XBOX GAMES</b></a>
+				<a href="PC.html" class="home"><b >PC GAMES</b></a>
+				<a href="SALES.html" class="home"><b>ON SALE</b></a>
+				<nav class="containermenu">
+				<p class="drop"><b>NEWS</b><br>
+					<ul class="menulist">
+						<a target="_black" href="http://www.gamespot.com/ps4/"><li>PS4 GAMES</li></a><br>
+						<a target="_black" href="http://www.gamespot.com/xbox-one/"><li>XBOX GAMES</li></a><br>
+						<a target="_black" href="http://www.gamespot.com/pc/"><li>PC GAMES</li></a><br>
+					</ul>
+				</p>
+				</nav>
+	</nav>
+</div>
+<h1>SHOPPING CART</h1>
+<hr>
+<h2>ALMOST THERE!</h2>
+<div id="empty">
+	<p id="notempty">Your Shopping Cart is Empty<br>
+	It shouldn't be, you can find your favorite games below:<br>
+	<ul id="order">
+		<a href="PS4.html"><li>PS4 GAMES</li></a>
+		<a href="XBOX.html"><li>XBOX GAMES</li></a>
+		<a href="PC.html"><li>PC GAMES</li></a>
+		<a href="SALES.html"><li>ON SALE GAMES</li></a>
+	</ul></p>
+</div>
+<div id="purchasetotal">
+<p>Your current Total: $<b id="currentprice">00.00</b></p>
+<a href="Checkout.html"><button>Chechout</button></a>
+</div>
+<div class="SALESG">
+<br><br><br><br>
+		<nav class="psone"><img src="uncharted1.png"> <h3>UNCHARTED for PS4</h3>
+	<h3 class="pricesale">Reagular Price $40.00<br></h3><br>
+	<p>Uncharted 4: A Thief's End is an action-adventure video game developed <br>by Naughty Dog and published by Sony Interactive Entertainment for the <br>PlayStation 4 video game console. The game was released worldwide on<br>May 10, 2016.</p><a href="ShoppingCart.html"><button onclick="RemoveAllItems('psone')">Remove</button></a></nav>
+	<br>
+	<nav class="pstwo"><img src="forhonor.jpg"> <h3>FOR HONOR for PS4</h3>
+	<h3 class="pricesale">Reagular Price $60.00<br></h3><br>
+	<p>For Honor is an upcoming action hack and slash video game in <br>development by Ubisoft Montreal and set to be published by Ubisoft for <br>Microsoft Windows, PlayStation 4, and Xbox One. It was announced at <br>he 2015 Electronic Entertainment Expo.</p><a href="ShoppingCart.html"><button onclick="RemoveAllItems('pstwo')">Remove</button></a></nav>
+	<br>
+	<nav class="psthree"><img src="GhostC.jpg"> <h3>CALL OF DUTY: GHOSTS for PS4</h3>
+	<h3 class="pricesale">Reagular Price $50.00<br></h3>
+	<p>Call of Duty: Ghosts is a 2013 first-person shooter video game developed <br>by Infinity Ward, with assistance from Raven Software, Neversoft and <br>Certain Affinity.</p><a href="ShoppingCart.html"><button onclick="RemoveAllItems('psthree')">Remove</button></a></nav>
+	<br>
+	<nav class="psfour"><img src="lastus.jpg"> <h3>LAST OF US for PS4</h3>
+	<h3 class="pricesale">Reagular Price $40.00<br></h3>
+	<p>The Last of Us Remastered is an action-adventure survival horror video <br>game developed by Naughty Dog and published by Sony Computer <br>Entertainment.</p><a href="ShoppingCart.html"><button onclick="RemoveAllItems('psfour')">Remove</button></a></nav>
+	<br>
+	<nav class="psfive"><img src="Godof.png"> <h3>GOD OF WAR for PS4</h3>
+	<h3 class="pricesale">Reagular Price $15.00<br></h3>
+	<p>God of War is an upcoming third-person action-adventure video game in<br>development by Santa Monica Studio and to be published by Sony<br>Interactive Entertainment (SIE) for the PlayStation 4 (PS4) console.<br>It will be the eighth installment in the God of War series, the eighth<br>chronologically, and the sequel to 2010's God of War III.</p><a href="ShoppingCart.html"><button onclick="RemoveAllItems('psfive')">Remove</button></a></nav>
+	
+	<!--**************************************************************-->
+
+	<nav class="xboxone"><img src="GEAR.jpg"> <h3>GEARS OF WAR for XBOX</h3>
+	<h3 class="pricesale">Reagular Price $60.00<br></h3><br>
+	<p>Gears of War is a video game franchise created and originally owned by <br>Epic Games, developed and managed by The Coalition, and owned and <br>published by Microsoft Studios.</p><a href="ShoppingCart.html"><button onclick="RemoveAllItems('xboxone')">Remove</button></a></nav>
+	<br>
+	<nav class="xboxtwo"><img src="halo.png"> <h3>HALO 5 for XBOX</h3>
+	<h3 class="pricesale">Reagular Price $60.00<br></h3><br>
+	<p>Halo 5: Guardians is a first-person shooter video game developed by 343 <br>Industries and published by Microsoft Studios for the Xbox One home <br>video game console. Part of the Halo series, the game was released on <br>October 27, 2015.</p><a href="ShoppingCart.html"><button onclick="RemoveAllItems('xboxtwo')">Remove</button></a></nav>
+	<br>
+	<nav class="xboxthree"><img src="division.jpg"> <h3>THE DIVISION for XBOX</h3>
+	<h3 class="pricesale">Reagular Price $60.00<br></h3>
+	<p>Tom Clancy's The Division is an online-only open world third-person <br>shooter video game developed by Ubisoft Massive and published by <br>Ubisoft, with assistance from Red Storm Entertainment, for Microsoft <br>Windows, PlayStation 4 and Xbox One.</p><a href="ShoppingCart.html"><button onclick="RemoveAllItems('xboxthree')">Remove</button></a></nav>
+	<br>
+	<nav class="xboxfour"><img src="dead.jpg"> <h3>DEAD RAISING 2 for XBOX</h3>
+	<h3 class="pricesale">Reagular Price $20.00<br></h3>
+	<p>Dead Rising 2 is an open world survival horror beat 'em up video game <br>developed by Canadian company Blue Castle Games and published by <br>Capcom in September 2010 for the PlayStation 3, Xbox 360, and <br>Microsoft Windows video gaming platforms.</p><a href="ShoppingCart.html"><button onclick="RemoveAllItems('xboxfour')">Remove</button></a></nav>
+	<br>
+	<nav class="xboxfive"><img src="RED.jpg"> <h3>RED REDEMPTION for XBOX</h3>
+	<h3 class="pricesale">Reagular Price $30.00<br></h3>
+	<p>Red Dead Redemption is an open world, western action-adventure video <br>game developed by Rockstar San Diego and published by Rockstar <br>Games. It was released for the PlayStation 3 and Xbox 360 consoles in <br>May 2010.</p><a href="ShoppingCart.html"><button onclick="RemoveAllItems('xboxfive')">Remove</button></a></nav>
+
+	<!--**************************************************************-->
+
+	<nav class="pcone"><img src="Assassin.jpg"> <h3>ASSASSING'S CREED 3 for PC</h3>
+	<h3 class="pricesale">Reagular Price $20.00<br></h3><br>
+	<p>Assassin's Creed III is a 2012 action-adventure video game developed by <br>Ubisoft Montreal and published by Ubisoft for PlayStation 3, Xbox 360, <br>Wii U, and Microsoft Windows.</p><<button onclick="RemoveAllItems('pcone')">Remove</button></nav></nav>
+	<br>
+	<nav class="pctwo"><img src="BATMAN.jpg"> <h3>BATMAN: AKHAN CITY for PC</h3>
+	<h3 class="pricesale">Reagular Price $30.00<br></h3><br>
+	<p>Batman: Arkham City is a 2011 action-adventure video game developed <br>by Rocksteady Studios and released by Warner Bros. Interactive <br>Entertainment for the PlayStation 3 and Xbox 360 video game consoles, <br>and Microsoft Windows.</p><a href="ShoppingCart.html"><button onclick="RemoveAllItems('pctwo')">Remove</button></a></nav>
+	<br>
+	<nav class="pcthree"><img src="FARCRY.jpg"> <h3>FARCRY 2 for PC</h3>
+	<h3 class="pricesale">Reagular Price $40.00<br></h3>
+	<p>Far Cry 2 is an open world first-person shooter developed by Ubisoft <br>Montreal and published by Ubisoft. It was released on October 21, 2008 <br>in North America, October 23, 2008 in Australia, and October 24, 2008 in <br>Europe.</p><a href="ShoppingCart.html"><button onclick="RemoveAllItems('pcthree')">Remove</button></a></nav>
+	<br>
+	<nav class="pcfour"><img src="Prototype.jpg"> <h3>PROTOTYPE for PC</h3>
+	<h3 class="pricesale">Reagular Price $40.00<br></h3>
+	<p>Prototype is a 2009 open world action-adventure video game developed <br>by Radical Entertainment and published by Activision.</p><a href="ShoppingCart.html"><button onclick="RemoveAllItems('pcfour')">Remove</button></a></nav>
+	<br>
+	<nav class="pcfive"><img src="OVER.jpg"> <h3>OVERWATCH for PC</h3>
+	<h3 class="pricesale">Reagular Price $20.00<br></h3>
+	<p>Overwatch is a team-based multiplayer first-person shooter video game <br>developed and published by Blizzard Entertainment. It was released in <br>May 2016 for Microsoft Windows, PlayStation 4, and Xbox One.</p><a href="ShoppingCart.html"><button onclick="RemoveAllItems('pcfive')">Remove</button></a></nav>
+</div>
+	<!--**************************************************************-->
+<div class="SALESG1">
+		<nav class="saleone"><img src="fifasale.jpg"> <h3>FIFA 16 for PS4</h3>
+	<h3 class="pricesale0">Reagular Price<b class="regular1"> $60.00</b><br><b class="pricesale2">Sale Price $30.00</b></h3><br>
+	<p>The game is the first in the FIFA series to include female players. It is also<br>the first in which the players on the covers were chosen by popular vote,<br>including one of the first three women to appear on the cover. Martin Tyler<br>and Alan Smith are the commentators for the game.</p><a href="ShoppingCart.html"><button onclick="RemoveAllItems('saleone')">Remove</button></a></nav>
+	<br>
+	<nav class="saletwo"><img src="gi.jpg"> <h3>G.I JOE: THE RISE OF COBRA for XBOX</h3>
+	<h3 class="pricesale0">Reagular Price<b class="regular1"> $60.00</b><br><b class="pricesale2">Sale Price $40.00</b></h3><br>
+	<p>Armed with the latest in military and spy technology, the team of elite <br>soldiers known as G.I. Joe travel around the globe to wherever their <br>services are needed. In their latest assignment Gen.</p><a href="ShoppingCart.html"><button onclick="RemoveAllItems('saletwo')">Remove</button></a></nav>
+	<br>
+	<nav class="salethree"><img src="Fallout.jpg"> <h3>FALLOUT 4 for PC</h3>
+	<h3 class="pricesale0">Reagular Price<b class="regular1"> $60.00</b><br><b class="pricesale2">Sale Price $40.00</b></h3><br>
+	<p>Fallout 4 is an action role-playing video game developed by Bethesda <br>Game Studios and published by Bethesda Softworks for Microsoft <br>Windows, PlayStation 4, and Xbox One.</p><a href="ShoppingCart.html"><button onclick="RemoveAllItems('salethree')">Remove</button></a></nav>
+		<br>
+	<nav class="salefour"><img src="mafia.jpg"> <h3>MAFIA 3 for PC</h3>
+	<h3 class="pricesale0">Reagular Price<b class="regular1"> $60.00</b><br><b class="pricesale2">Sale Price $50.00</b></h3><br>
+	<p>Mafia III is an upcoming action-adventure video game developed by<br> Hangar 13 and published by 2K Games. It is the third installment in the <br>Mafia series, and the debut title for Hangar 13.</p><a href="ShoppingCart.html"><button onclick="RemoveAllItems('salefour')">Remove</button></a></nav>
+		<br>
+	<nav class="salefive"><img src="TITAN.jpg"> <h3>TITANFALL for PC</h3>
+	<h3 class="pricesale0">Reagular Price<b class="regular1"> $60.00</b><br><b class="pricesale2">Sale Price $20.00</b></h3><br>
+	<p>Titanfall 2 is an upcoming first-person shooter video game developed by <br>Respawn Entertainment and published by Electronic Arts.</p><a href="ShoppingCart.html"><button onclick="RemoveAllItems('salefive')">Remove</button></a></nav>
+</div>
+<footer class="btFooter">
+	<p class="copyrights">&copy; 2016</p><a href="Contact.html"><hr class="footerSap"><p class="CON">Contact Us</p></a>
+</footer>
+<script type="text/javascript" src="ShoppingCart.js"></script>
+<style type="text/css">
+	/*style the container where the amount of items is display*/
+	#empty{
+		padding-top: 1.5%;
+		width: 40%;
+		margin-top: 5%;
+		float: right;
+		height: 200px;
+		 background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+	}
+	/*stylees alignment of text statement when empty cart*/
+	#notempty{
+		text-align: center;
+		color: white;
+		font-weight: bolder;
+		font-size: 120%;
+	}
+	/*styles container of totalcost display*/
+	#purchasetotal{
+	margin-top: 7%;
+		padding-top: 1.5%;
+		width: 40%;
+		height: 150px;
+			 background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+	}
+	/*heading*/
+	h2{
+		color: rgb(196,217,225);
+		text-align: center;
+		font-family: 'Press Start 2P', cursive;
+	}
+	/*styles inside of the container of total cost display*/
+	#purchasetotal button{
+		width: 110px;
+		height: 40px;
+		color: black;
+		font-size: 120%;
+		border-radius: 7px;
+		border:2px solid black;
+		background-color: powderblue;
+	}
+	#purchasetotal button:hover{
+		border:2px solid white;
+		cursor: pointer;
+	}
+
+	#purchasetotal button:active{
+		border:2px solid red;
+		cursor: pointer;
+	}
+	#purchasetotal p{
+		color: white;
+		font-weight: bolder;
+		font-size: 120%;
+		text-align: center;
+	}
+	#purchasetotal button{
+		margin-top: 2%;
+		margin-left: 60%;
+	}
+	#currentprice{
+		color: white;
+	}
+	/*initially sets all items in cart to hide
+	to appear as the cart is empty*/
+	.psone, .pstwo, .psthree, .psfour, .psfive{
+		display: none;
+	}
+	.xboxone, .xboxtwo, .xboxthree, .xboxfour, .xboxfive{
+		display: none;
+	}
+	.pcone, .pctwo, .pcthree, .pcfour, .pcfive{
+		display: none;
+	}
+	.saleone, .saletwo, .salethree, .salefour, .salefive{
+		display: none;
+	}
+</style>
+
+	</body>
+	</html>
